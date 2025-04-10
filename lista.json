@@ -1,0 +1,58 @@
+{
+    "gifts": [
+        {
+            "name": "Laptop"
+        },
+        {
+            "name": "Smartphone"
+        },
+        {
+            "name": "Headphones"
+        },
+        {
+            "name": "Smart TV"
+        },
+        {
+            "name": "Gaming Console"
+        },
+        {
+            "name": "Wireless Charger"
+        },
+        {
+            "name": "Fitness Tracker"
+        },
+        {
+            "name": "Portable SSD"
+        },
+        {
+            "name": "Smart Home Assistant"
+        },
+        {
+            "name": "Streaming Device"
+        },
+        {
+            "name": "Action Camera"
+        },
+        {
+            "name": "Smartwatch"
+        },
+        {
+            "name": "Tablet"
+        },
+        {
+            "name": "Camera"
+        },
+        {
+            "name": "Bluetooth Speaker"
+        },
+        {
+            "name": "E-reader"
+        },
+        {
+            "name": "Drone"
+        },
+        {
+            "name": "VR Headset"
+        }
+    ]
+}
