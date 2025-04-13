@@ -10,7 +10,11 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "yarn"
+        "start": "yarn",
+        "start:frontend": "yarn workspace frontend start",
+        "start:backend": "yarn workspace backend start",
+        "build:frontend": "yarn workspace frontend build",
+        "build:backend": "yarn workspace backend build"
     },
     "repository": {
         "type": "git",
