@@ -1,4 +1,27 @@
 {
     "private": true,
-    "workspaces": ["frontend", "backend"]
+    "workspaces": [
+        "frontend",
+        "backend"
+    ],
+    "name": "prueba-lista-de-regalos",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "yarn"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MaximilianoGiovine/giftlist.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/MaximilianoGiovine/giftlist/issues"
+    },
+    "homepage": "https://github.com/MaximilianoGiovine/giftlist#readme"
 }

@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe4e1; /* Rosa pastel pálido */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffd1dc; /* Rosa pastel */
+    color: #333; /* Texto oscuro para contraste */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header h2 {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #ff69b4; /* Rosa fuerte para destacar */
+}
+
+.gift-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 90%;
+    max-width: 600px;
+}
+
+.gift-item {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gift-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.gift-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.status-button {
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Botón de estado disponible */
+.status-button.disponible {
+    background-color: #28a745; /* Verde */
+    color: #fff;
+    cursor: pointer;
+}
+
+.status-button.disponible:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Botón de estado regalado */
+.status-button.regalado {
+    background-color: #dc3545; /* Rojo */
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+/* Botón deshabilitado */
+.status-button:disabled {
+    opacity: 0.7;
+}
+
+/* Formulario */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    margin: 20px 0;
+    text-align: center; /* Centra el contenido dentro del formulario */
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    text-align: center; /* Centra el texto dentro del input */
+}
+
+form input:focus {
+    outline: none;
+    border-color: #ff69b4; /* Rosa fuerte */
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+
+form input::placeholder {
+    text-align: center; /* Centra el texto del placeholder */
+    color: #aaa; /* Opcional: Cambia el color del placeholder */
+}
+
+form button {
+    background-color: #ffd1dc; /* Rosa pastel */
+    color: #333; /* Texto oscuro */
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Resalta la fuente */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #ffb6c1; /* Rosa pastel más fuerte */
+    transform: scale(1.05);
+}
