@@ -1,11 +1,11 @@
 {
+    "name": "prueba-lista-de-regalos",
+    "version": "1.0.0",
     "private": true,
     "workspaces": [
         "frontend",
         "backend"
     ],
-    "name": "prueba-lista-de-regalos",
-    "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
