@@ -2,13 +2,13 @@ services:
   - type: web
     name: backend
     env: node
-    buildCommand: yarn install && yarn build:backend
-    startCommand: yarn start:backend
+    buildCommand: yarn install
+    startCommand: yarn workspace backend start
     plan: free
 
   - type: web
     name: frontend
     env: static
-    buildCommand: yarn install && yarn build:frontend
+    buildCommand: yarn install && yarn workspace frontend build
     staticPublishPath: frontend/dist
     plan: free
