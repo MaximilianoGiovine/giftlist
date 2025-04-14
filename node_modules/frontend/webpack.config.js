@@ -1,20 +1,20 @@
 const path = require('path');
 
 module.exports = {
-  entry: './index.js', // Archivo de entrada principal
+  entry: './index.js',
   output: {
-    path: path.resolve(__dirname, 'public'), // Cambiado a 'public'
-    filename: 'bundle.js', // Nombre del archivo generado
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js',
   },
-  mode: 'production', // Modo de construcción
+  mode: 'production',
   module: {
     rules: [
       {
-        test: /\.css$/, // Manejo de archivos CSS
+        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(js|jsx)$/, // Manejo de archivos JS/JSX
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: 'babel-loader',
       },

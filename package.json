@@ -9,7 +9,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "yarn",
+        "start": "yarn start:backend",
         "start:frontend": "yarn workspace frontend start",
         "start:backend": "yarn workspace backend start",
         "build:frontend": "yarn workspace frontend build",
