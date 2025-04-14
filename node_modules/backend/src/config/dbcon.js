@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 require('dotenv').config({ path: './src/.env' }); // Carga el archivo .env desde la ruta especificada
-
 const dbcon = async () => {
     try {
         const mongoUri = process.env.MONGO_URI; // Usa la variable de entorno
