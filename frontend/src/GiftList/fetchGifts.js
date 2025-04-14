@@ -1,6 +1,7 @@
 const Gift = require('../models/giftModel');
 
-const API_URL = process.env.API_URL || 'https://giftlist-p2e5.onrender.com/'; // Cambia esta URL por la de tu backend en Render
+// Define la URL directamente
+const API_URL = 'https://giftlist-back.onrender.com/';
 
 const fetchGifts = async () => {
     try {
