@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
-require('dotenv').config({ path: './src/.env' }); // Carga el archivo .env desde la ruta especificada
+const env = require('./dotenvConfiguration'); // Importa las variables de entorno
+
 const dbcon = async () => {
     try {
-        const mongoUri = process.env.MONGO_URI; // Usa la variable de entorno
+        const mongoUri = env.MONGO_URI; // Usa la variable de entorno exportada
         if (!mongoUri) {
             throw new Error('MONGO_URI no está definida');
         }
