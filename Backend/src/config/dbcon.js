@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const env = require('./dotenvConfiguration'); // Importa las variables de entorno
+const env = require('./dotenvConfig'); // Importa las variables de entorno
 
 const dbcon = async () => {
     try {
