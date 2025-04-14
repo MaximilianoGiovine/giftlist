@@ -464,7 +464,7 @@
 
 "@babel/core@^7.26.10":
   version "7.26.10"
-  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.26.10.tgz#5c876f83c8c4dcb233ee4b670c0606f2ac3000f9"
+  resolved "https://registry.npmjs.org/@babel/core/-/core-7.26.10.tgz"
   integrity sha512-vMqyb7XCDMPvJFFOaT9kxtiRh42GwlZEg1/uIgtZshS5a/8OaduUfCi7kynKgc3Tw/6Uo2D+db9qBttghhmxwQ==
   dependencies:
     "@ampproject/remapping" "^2.2.0"
@@ -1142,7 +1142,7 @@
 
 "@babel/preset-env@^7.26.9":
   version "7.26.9"
-  resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.26.9.tgz#2ec64e903d0efe743699f77a10bdf7955c2123c3"
+  resolved "https://registry.npmjs.org/@babel/preset-env/-/preset-env-7.26.9.tgz"
   integrity sha512-vX3qPGE8sEKEAZCWk05k3cpTAE3/nOYca++JA+Rd0z2NCNzabmYvEiSShKzm10zdquOIAVXsy2Ei/DTW34KlKQ==
   dependencies:
     "@babel/compat-data" "^7.26.8"
@@ -1226,7 +1226,7 @@
 
 "@babel/preset-react@^7.26.3":
   version "7.26.3"
-  resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.26.3.tgz#7c5e028d623b4683c1f83a0bd4713b9100560caa"
+  resolved "https://registry.npmjs.org/@babel/preset-react/-/preset-react-7.26.3.tgz"
   integrity sha512-Nl03d6T9ky516DGK2YMxrTqvnpUW63TnJMOMonj+Zae0JiPC5BC9xPMSL6L8fiSpA5vP88qfygavVQvnLp+6Cw==
   dependencies:
     "@babel/helper-plugin-utils" "^7.25.9"
@@ -2459,7 +2459,7 @@ class-utils@^0.3.5:
 
 cli@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/cli/-/cli-1.0.1.tgz#22817534f24bfa4950c34d532d48ecbc621b8c14"
+  resolved "https://registry.npmjs.org/cli/-/cli-1.0.1.tgz"
   integrity sha512-41U72MB56TfUMGndAKK8vJ78eooOD4Z5NOL4xEfjc0c23s+6EYKXlXsmACBVclLP1yOfWCgEganVzddVrSNoTg==
   dependencies:
     exit "0.1.2"
@@ -2702,7 +2702,7 @@ dns-packet@^5.2.2:
 
 dotenv@^16.5.0:
   version "16.5.0"
-  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.5.0.tgz"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.5.0.tgz#092b49f25f808f020050051d1ff258e404c78692"
   integrity sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==
 
 dunder-proto@^1.0.1:
@@ -3660,7 +3660,7 @@ launch-editor@^2.6.0:
 
 live-server@^1.2.2:
   version "1.2.2"
-  resolved "https://registry.yarnpkg.com/live-server/-/live-server-1.2.2.tgz#20b4fe5c2ca886faa61813310e28680804f48dad"
+  resolved "https://registry.npmjs.org/live-server/-/live-server-1.2.2.tgz"
   integrity sha512-t28HXLjITRGoMSrCOv4eZ88viHaBVIjKjdI5PO92Vxlu+twbk6aE0t7dVIaz6ZWkjPilYFV6OSdMYl9ybN2B4w==
   dependencies:
     chokidar "^2.0.4"
