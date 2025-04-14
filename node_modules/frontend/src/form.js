@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (giftName) {
             // Realizar la solicitud HTTP POST
-            fetch("http://localhost:3000/GiftList", {
+            fetch("https://giftlist-back.onrender.com/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
