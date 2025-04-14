@@ -10,5 +10,5 @@ services:
     name: frontend
     env: static
     buildCommand: yarn install && yarn workspace frontend build
-    staticPublishPath: frontend/dist
+    staticPublishPath: frontend/public
     plan: free

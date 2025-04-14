@@ -16,11 +16,16 @@
   "type": "commonjs",
   "dependencies": {
     "axios": "^1.8.4",
+    "babel-loader": "^10.0.0",
     "webpack": "^5.0.0",
     "webpack-cli": "^4.0.0",
     "webpack-dev-server": "^4.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^10.0.0",
     "cli": "^1.0.1",
     "live-server": "^1.2.2",
     "nodemon": "^3.1.9"
