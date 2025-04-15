@@ -15,7 +15,7 @@ const renderGiftList = async () => {
                     class="status-button ${gift.status}" 
                     ${gift.status === 'regalado' ? 'disabled' : ''}
                 >
-                    ${gift.status === 'regalado' ? 'Regalado' : 'Disponible'}
+                    ${gift.status === 'regalado' ? 'Regalado' : 'Regalar'}
                 </button>
             `;
 
