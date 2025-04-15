@@ -3,13 +3,14 @@
     "version": "1.0.0",
     "private": true,
     "workspaces": [
-        "./frontend",
-        "./backend"
+        "frontend",
+        "backend"
     ],
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "yarn start:backend",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "yarn",
         "start:frontend": "yarn workspace frontend start",
         "start:backend": "yarn workspace backend start",
         "build:frontend": "yarn workspace frontend build",
