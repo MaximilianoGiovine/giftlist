@@ -19,24 +19,32 @@ document.addEventListener("DOMContentLoaded", () => {
                     status: "disponible" // Estado inicial del regalo
                 })
             })
-            .then(response => response.json())
-            .then(data => {
-                if (data.error) {
-                    console.error("Error al agregar el regalo:", data.error);
-                } else {
-                    console.log("Nuevo regalo agregado:", data);
-
-                    // Limpia el campo de entrada
-                    giftInput.value = "";
-
-                    // Muestra un mensaje de éxito
-                    alert("Regalo agregado exitosamente!");
-
-                    // Recarga la página para mostrar los cambios
-                    window.location.reload();
+            .then(response => {
+                if (!response.ok) {
+                    // Si el servidor devuelve un error, lanza una excepción
+                    return response.json().then(error => {
+                        throw new Error(error.error || 'Error desconocido');
+                    });
                 }
+                return response.json();
             })
-            .catch(error => console.error("Error al realizar la solicitud POST:", error));
+            .then(data => {
+                console.log("Nuevo regalo agregado:", data);
+
+                // Limpia el campo de entrada
+                giftInput.value = "";
+
+                // Muestra un mensaje de éxito
+                alert("Regalo agregado exitosamente!");
+
+                // Recarga la página para mostrar los cambios
+                window.location.reload();
+            })
+            .catch(error => {
+                // Muestra un pop-up con el mensaje de error
+                alert(`Error: ${error.message}`);
+                console.error("Error al agregar el regalo:", error);
+            });
         } else {
             alert("Por favor, ingresa un nombre para el regalo.");
         }
