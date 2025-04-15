@@ -27,6 +27,13 @@ const renderGiftList = async () => {
                     return;
                 }
 
+                // Mostrar el pop-up de confirmación
+                const confirmAction = window.confirm(`¿Quieres confirmar "${gift.gift}" como regalado?`);
+                if (!confirmAction) {
+                    // Si el usuario cancela, no se realiza la solicitud
+                    return;
+                }
+
                 try {
                     // Actualiza el estado del regalo en el backend
                     await updateGiftStatus(gift.gift, 'regalado');
