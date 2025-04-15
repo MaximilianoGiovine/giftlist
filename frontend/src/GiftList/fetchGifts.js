@@ -18,7 +18,7 @@ const fetchGifts = async () => {
 
 const updateGiftStatus = async (giftName, status) => {
     try {
-        const response = await fetch(`https://giftlist-back.onrender.com/GiftList/${giftName}`, {
+        const response = await fetch(`https://giftlist-back.onrender.com/GiftList?gift=${encodeURIComponent(giftName)}`, { // <-- Corrección aquí
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
