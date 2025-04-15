@@ -3,6 +3,7 @@ const { fetchGifts, updateGiftStatus } = require('./fetchGifts'); // Importa la 
 const renderGiftList = async () => {
     try {
         const gifts = await fetchGifts(); // Obtén la lista de regalos desde la API
+        console.log('Datos obtenidos desde la API:', gifts); // <-- Agrega este log
         const container = document.getElementById('gift-list');
         container.innerHTML = ''; // Limpia la lista existente
 
@@ -13,7 +14,7 @@ const renderGiftList = async () => {
                 <h3>${gift.gift}</h3>
                 <button 
                     class="status-button ${gift.status}" 
-                    ${gift.status === 'regalado' ? 'disabled' : ''}
+                    ${gift.status !== 'disponible' ? 'disabled' : ''}
                 >
                     ${gift.status === 'regalado' ? 'Regalado' : 'Regalar'}
                 </button>
@@ -27,12 +28,11 @@ const renderGiftList = async () => {
                 }
 
                 try {
-                    const updatedGift = await updateGiftStatus(gift.gift, 'regalado'); // Actualiza el estado del regalo
-                    gift.status = 'regalado'; // Actualiza el estado localmente
-                    button.textContent = 'Regalado';
-                    button.classList.add('regalado');
-                    button.disabled = true;
-                    console.log('Regalo actualizado:', updatedGift);
+                    // Actualiza el estado del regalo en el backend
+                    await updateGiftStatus(gift.gift, 'regalado');
+                    
+                    // Refresca la página para mostrar los cambios
+                    window.location.reload();
                 } catch (error) {
                     console.error('Error al actualizar el regalo:', error);
                 }
@@ -45,4 +45,4 @@ const renderGiftList = async () => {
     }
 };
 
-module.exports =  renderGiftList ;
+module.exports = renderGiftList;

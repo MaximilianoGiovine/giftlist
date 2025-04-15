@@ -101,6 +101,12 @@ h1 {
     opacity: 0.7;
 }
 
+button[disabled] {
+    /* Estilos para botones deshabilitados */
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 /* Formulario */
 form {
     background-color: #fff;

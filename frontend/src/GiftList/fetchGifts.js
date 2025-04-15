@@ -8,6 +8,7 @@ const fetchGifts = async () => {
         }
 
         const data = await response.json();
+        console.log('Datos obtenidos desde la API:', data);
         return data.map(gift => Gift.fromApiResponse(gift)); // Transforma los datos en instancias del modelo Gift
     } catch (error) {
         console.error('Error fetching gifts:', error);
