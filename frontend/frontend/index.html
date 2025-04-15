@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Regalos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Regalos</h1>
+        <h2>Este registro nos sirve a nosotros para saber lo que ya ha sido regalado y lo que nos hace falta</h2>
+    </header>
+    <h1> Gracias por tu aporte</h1>
+    <ul id="gift-list"><!-- La lista de regalos se generará aquí mediante JavaScript --></ul>
+
+    <form id="add-gift-form" onsubmit="addGift(event)">
+        <label for="new-gift">Regalo:</label>
+        <input 
+            type="text" 
+            id="new-gift" 
+            name="new-gift" 
+            placeholder="Agrega un regalo aquí" 
+            required
+        >
+        <button type="submit">Agregar</button>
+    </form>
+    <script src="public/bundle.js"></script>
+    <script src="src/form.js"></script>
+</body>
+</html>
