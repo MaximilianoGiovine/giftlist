@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("add-gift-form");
 
     form.addEventListener("submit", (event) => {
-        event.preventDefault(); // Evita que la página se recargue
+        event.preventDefault(); // Evita que la página se recargue automáticamente
 
         const giftInput = document.getElementById("new-gift");
         const giftName = giftInput.value.trim();
@@ -26,9 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     console.log("Nuevo regalo agregado:", data);
 
-                    // Opcional: Actualizar la interfaz o limpiar el formulario
-                    giftInput.value = ""; // Limpiar el campo de entrada
+                    // Limpia el campo de entrada
+                    giftInput.value = "";
+
+                    // Muestra un mensaje de éxito
                     alert("Regalo agregado exitosamente!");
+
+                    // Recarga la página para mostrar los cambios
+                    window.location.reload();
                 }
             })
             .catch(error => console.error("Error al realizar la solicitud POST:", error));
